@@ -16,6 +16,15 @@
     #Item{
         background-color: #cad7ca;
     }
+    #Home{
+        display: block;
+    }
+   #Item{
+       display: none;
+   }
+   #Customer{
+       display: none;
+   }
 
     </style>
 
@@ -528,6 +537,37 @@
             </div>
         </section>
     </section>
+        <script src="/lib/jQuery/jquery-3.6.4.min.js"></script>
+        <script>
+
+            document.getElementById("btnHome").addEventListener("click", function () {
+                $("#Home").css({display: 'block'})
+                $("#Item").css({display: 'none'})
+                $("#Customer").css({display: 'none'})
+
+            })
+
+            document.getElementById("btnOrder").addEventListener("click", function () {
+                $("#Home").css({display: 'block'})
+                $("#Item").css({display: 'none'})
+                $("#Customer").css({display: 'none'})
+            })
+            document.getElementById("btnItems").addEventListener("click", function () {
+                $("#Home").css({display: 'none'})
+                $("#Item").css({display: 'block'})
+                $("#Customer").css({display: 'none'})
+            })
+
+            document.getElementById("btnCustomer").addEventListener("click", function () {
+                $("#Home").css({display: 'none'})
+                $("#Item").css({display: 'none'})
+                $("#Customer").css({display: 'block'})
+            })
+
+
+
+        </script>
+
     </body>
 </html>
 
